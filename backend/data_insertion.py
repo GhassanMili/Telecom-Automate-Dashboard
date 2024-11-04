@@ -4,7 +4,7 @@ import pandas as pd
 # Oracle database connection details
 dsn = cx_Oracle.makedsn("localhost", "1521", service_name="orcl")
 try:
-    connection = cx_Oracle.connect(user="ra@2024", password="Naders123", dsn=dsn, mode=cx_Oracle.SYSDBA)
+    connection = cx_Oracle.connect(user="ra@2024", password="*****", dsn=dsn, mode=cx_Oracle.SYSDBA)
     cursor = connection.cursor()
     print("Database connection successful.")
 except cx_Oracle.DatabaseError as e:
